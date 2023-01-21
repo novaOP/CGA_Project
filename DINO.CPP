@@ -1,0 +1,84 @@
+#include<iostream.h>
+#include<conio.h>
+#include<graphics.h>
+void dinosaur(int x , int y){
+line(x+139,y+220,x+170,y+220);
+line(x+170,y+220,x+170,y+225);
+line(x+170,y+225,x+172,y+225);
+line(x+172,y+225,x+172,y+238);
+line(x+172,y+238,x+150,y+238);
+line(x+150,y+238,x+150,y+242);
+line(x+150,y+242,x+163,y+242);
+line(x+163,y+242,x+163,y+244);
+line(x+163,y+244,x+147,y+244);
+line(x+147,y+244,x+147,y+250);
+line(x+147,y+250,x+155,y+250);
+line(x+155,y+250,x+155,y+256);
+line(x+155,y+256,x+153,y+256);
+line(x+153,y+256,x+153,y+253);
+line(x+153,y+253,x+147,y+253);
+line(x+147,y+253,x+147,y+263);
+//Staircase pattern
+line(x+147,y+263,x+145,y+263);
+line(x+145,y+263,x+145,y+265);
+line(x+145,y+265,x+143,y+265);
+line(x+143,y+265,x+143,y+267);
+line(x+143,y+267,x+141,y+267);
+//Legs
+line(x+141,y+267,x+141,y+277);
+line(x+141,y+277,x+146,y+277);
+line(x+146,y+277,x+146,y+279);
+line(x+146,y+279,x+138,y+279);
+line(x+138,y+279,x+138,y+272);
+line(x+138,y+272,x+136,y+272);
+line(x+136,y+272,x+136,y+269);
+line(x+136,y+269,x+133,y+269);
+line(x+133,y+269,x+133,y+271);
+line(x+133,y+271,x+131,y+271);
+line(x+131,y+271,x+131,y+272);
+line(x+131,y+272,x+130,y+272);
+line(x+131,y+272,x+130,y+273);
+line(x+130,y+273,x+129,y+273);
+line(x+129,y+273,x+129,y+276);
+line(x+129,y+276,x+134,y+276);
+line(x+134,y+276,x+134,y+279);
+line(x+134,y+279,x+125,y+279);
+line(x+125,y+279,x+125,y+267);
+//Staircase pattern
+line(x+125,y+267,x+123,y+267);
+line(x+123,y+267,x+123,y+265);
+line(x+123,y+265,x+121,y+265);
+line(x+121,y+265,x+121,y+263);
+line(x+121,y+263,x+119,y+263);
+line(x+119,y+263,x+119,y+261);
+line(x+119,y+261,x+117,y+261);
+line(x+117,y+261,x+117,y+247);
+line(x+117,y+247,x+119,y+247);
+line(x+119,y+247,x+119,y+249);
+line(x+119,y+249,x+121,y+249);
+line(x+121,y+249,x+121,y+251);
+line(x+121,y+251,x+123,y+251);
+line(x+123,y+251,x+123,y+253);
+line(x+123,y+253,x+127,y+253);
+line(x+127,y+253,x+127,y+251);
+line(x+127,y+251,x+129,y+251);
+line(x+129,y+251,x+129,y+249);
+line(x+129,y+249,x+131,y+249);
+line(x+131,y+249,x+131,y+247);
+line(x+131,y+247,x+133,y+247);
+line(x+133,y+247,x+133,y+245);
+line(x+133,y+245,x+135,y+245);
+line(x+135,y+245,x+135,y+227);
+line(x+135,y+227,x+139,y+227);
+line(x+139,y+227,x+139,y+221);
+//Eyes
+rectangle(x+143,y+228,x+147,y+225);
+}
+void main(){
+	int gd=DETECT,gm;
+	int x=0,y=0;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	dinosaur(x,y);
+	getch();
+	closegraph();
+}
